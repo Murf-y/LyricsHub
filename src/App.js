@@ -31,7 +31,7 @@ function App() {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '73ef56bd10msh531e77588228f3ep163455jsn97716c42af17',
+        'X-RapidAPI-Key': `${process.env.API_URL}`,
         'X-RapidAPI-Host': 'genius.p.rapidapi.com'
       }
     };
