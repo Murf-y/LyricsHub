@@ -3,6 +3,7 @@ import SearchBar from "./components/search_bar";
 import Footer from "./components/footer";
 import SongCard from "./components/song_card";
 import LoadingSpinner from "./components/loading_spinner";
+
 import { useState} from "react";
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': `${process.env.API_URL}`,
+        'X-RapidAPI-Key': `${process.env.REACT_APP_API_KEY}`,
         'X-RapidAPI-Host': 'genius.p.rapidapi.com'
       }
     };

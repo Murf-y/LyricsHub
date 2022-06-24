@@ -5,7 +5,7 @@ function Toggle() {
 
   React.useEffect(() => {
     updateTheme(isToggled);
-  }, []);
+  }, [isToggled]);
 
 
   const toggle = () => {
